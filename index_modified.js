@@ -19,7 +19,7 @@ function saveAppointments() {
 }
 
 app.get('/', (req, res) => {
-  res.send('¡Servidor funcionando!');
+  res.sendFile(path.join(__dirname, 'index_modified.html'));
 });
 
 app.post('/appointments', (req, res) => {
