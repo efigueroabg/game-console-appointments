@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Agenda de Citas</title>
+  <meta charset="UTF-8">
+  <title>Agendar Cita</title>
 </head>
 <body>
-  <h1>Agenda de Citas</h1>
+  <h1>Agendar Cita para Consola de Juegos</h1>
   <form id="appointmentForm">
-    <input type="text" id="name" placeholder="Nombre" required />
-    <input type="date" id="date" required />
-    <input type="time" id="time" required />
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" required><br><br>
+    <label for="date">Fecha:</label>
+    <input type="date" id="date" required><br><br>
+    <label for="time">Hora:</label>
+    <input type="time" id="time" required><br><br>
     <button type="submit">Agendar</button>
   </form>
+
+  <h2>Citas Agendadas</h2>
   <ul id="appointmentsList"></ul>
+
   <script src="script.js"></script>
 </body>
 </html>
