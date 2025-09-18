@@ -18,8 +18,8 @@ function saveAppointments() {
   fs.writeFileSync(DATA_FILE, JSON.stringify(appointments, null, 2));
 }
 
-app.get('/appointments', (req, res) => {
-  res.json(appointments);
+app.get('/', (req, res) => {
+  res.send('¡Servidor funcionando!');
 });
 
 app.post('/appointments', (req, res) => {
