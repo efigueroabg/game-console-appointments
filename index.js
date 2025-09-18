@@ -4,7 +4,7 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const DATA_FILE = path.join(__dirname, 'appointments.json');
+const DATA_FILE = path.join(__dirname, 'appointments.db');
 
 app.use(express.static(__dirname));
 app.use(express.json());
