@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agenda de Citas</title>
+    <style>
+        .admin-only { display: none; }
+    </style>
+</head>
+<body>
+    <h1>Agendar Cita</h1>
+    <form id="formulario">
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="date" id="fecha" required>
+        <input type="time" id="hora" required>
+        <button type="submit">Agendar</button>
+    </form>
+
+    <label>
+        <input type="checkbox" id="modoAdmin"> Modo administrador
+    </label>
+    <div id="claveAdminContainer" style="display:none;">
+        <input type="password" id="claveAdmin" placeholder="Clave de administrador">
+        <button onclick="validarClave()">Validar</button>
+    </div>
+
+    <h2>Citas Agendadas</h2>
+    <ul id="listaCitas"></ul>
+
+    <script src="index.js"></script>
+</body>
+</html>
