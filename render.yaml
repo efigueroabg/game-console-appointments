@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: game-console-appointments
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    rootDir: .
